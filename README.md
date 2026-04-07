@@ -1,4 +1,4 @@
-# Python Excel Report Automation
+# warehouse-reporting-automation
 
 Automated reporting pipeline for warehouse/operations data using Python, SQL, Excel export, historical KPI tracking, and Outlook integration.
 
