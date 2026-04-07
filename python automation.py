@@ -731,6 +731,13 @@ def main() -> None:
     }
 
     export_report(report_tables, output_path)
+    create_outlook_mail_send(
+        to_addr=MAIL_TO,
+        cc_addr=MAIL_CC,
+        subject=f"Positionsreport MOK für {report_date}",
+        body=f"Der Positionsreport für MOK am {report_date} ist angehängt.",
+        attachment_path=output_path
+    )
 
     logging.info("Finished successfully")
     logging.info("Output file: %s", output_path)
